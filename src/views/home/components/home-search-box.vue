@@ -16,8 +16,8 @@
           <span class="tip">入住</span>
           <span class="time">{{ startDateStr }}</span>
         </div>
-        <div class="stay">共{{ stayCount }}晚</div>
       </div>
+      <div class="stay">共{{ stayCount }}晚</div>
       <div class="end">
         <div class="date">
           <span class="tip">离店</span>
@@ -192,6 +192,7 @@ const searchBtnClick = () => {
   .date {
     display: flex;
     flex-direction: column;
+    text-align: center;
 
     .tip {
       font-size: 12px;
