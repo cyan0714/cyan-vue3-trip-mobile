@@ -48,11 +48,6 @@ watch(isReachBottom, (newValue) => {
 })
 
 // 搜索框显示的控制
-// const isShowSearchBar = ref(false)
-// watch(scrollTop, (newTop) => {
-//   isShowSearchBar.value = newTop > 100
-// })
-// 定义的可响应式数据, 依赖另外一个可响应式的数据, 那么可以使用计算函数(computed)
 const isShowSearchBar = computed(() => {
   return scrollTop.value >= 360
 })
